@@ -1,0 +1,23 @@
+mixin person-data()
+	+b.person-data&attributes(attributes)
+		block
+div(class="person-data")
+	div(class="person-data__item")
+		label(class="person-data__label" for="fullName") Полное ФИО
+		input(class="person-data__input" id="fullName" type="text" value="Лещенко Алексей Мурадович")
+
+	div(class="person-data__item")
+		label(class="person-data__label" for="year") Год рождения
+		input(class="person-data__input" id="year" type="text" value="1984")
+
+	div(class="person-data__item")
+		label(class="person-data__label" for="address") Место жительства
+		input(class="person-data__input" id="address" type="text" value="г. Волгодонск, Россия")
+
+	div(class="person-data__item")
+		label(class="person-data__label" for="skype") Скайп
+		input(class="person-data__input" id="skype" type="text" value="freemanlexx")
+
+	div(class="person-data__item")
+		label(class="person-data__label" for="email") Почта
+		input(class="person-data__input" id="email" type="text" value="le2x@rambler.ru")

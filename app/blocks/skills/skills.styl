@@ -1,0 +1,58 @@
+.skills
+	margin-top 70px
+	margin-right 115px
+	display block
+
+	&__title
+		font-size 24px
+		font-weight 700
+		line-height 50px
+
+	&__text
+		margin-bottom 35px
+		font-size 15px
+		font-weight 400
+		line-height 23px
+		color #3d3d3d
+
+	&__items
+		display inline-block
+		width 250px
+		vertical-align top
+
+	&__item
+		margin-top 17px
+
+	&__item-text
+		display inline-block
+		width 200px
+		font-size 21px
+		font-weight 700
+		line-height 17px
+		vertical-align top
+		color #000000
+
+	&__label
+		position relative
+		display inline-block
+		width 19px
+		height 18px
+		vertical-align top
+		cursor pointer
+		background  url('../../assets/images/checkbox.png') no-repeat
+
+		& input:checked ~ .skills__checked-img
+			display block
+
+	&__input
+		display none
+
+	&__checked-img
+		position absolute
+		left 3px
+		bottom 1px
+		margin auto
+		display none
+		width 21px
+		height 27px
+		content url('../../assets/images/checked.png')

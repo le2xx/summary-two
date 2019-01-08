@@ -1,0 +1,45 @@
+.future
+	display block
+
+	&__title
+		font-size 24px
+		font-weight 700
+		line-height 50px
+		color #2f1b15
+
+	&__text
+		font-size 15px
+		font-weight 400
+		line-height 23px
+		color #3d3d3d
+
+	&__label
+		display inline-block
+		width 41px
+		height 45px
+		vertical-align middle
+		cursor pointer
+		background url('../../assets/images/radio.png') no-repeat
+
+	& input:checked ~ .future__checked-img
+		display block
+
+	&__input
+		display none
+
+	&__item-text
+		display inline-block
+		font-size 20px
+		font-weight 700
+		line-height 25px
+		vertical-align middle
+		color #000
+
+	&__checked-img
+		position relative
+		left 9px
+		bottom -13px
+		display none
+		width 23px
+		height 27px
+		background url('../../assets/images/radio_checked.png') no-repeat

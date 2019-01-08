@@ -1,0 +1,26 @@
+mixin future()
+	+b.future&attributes(attributes)
+		block
+div(class="future")
+	h3(class="future__title") Какие у вас планы на будущее?
+	p(class="future__text") Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+
+	label(class="future__label")
+		input(class="future__input" type="radio" name="future" value="Верстать")
+		span(class="future__checked-img")
+	div(class="future__item-text") Верстать
+
+	label(class="future__label")
+		input(class="future__input" type="radio" name="future" value="Прокачиваться в JS" checked="checked")
+		span(class="future__checked-img")
+	div(class="future__item-text") Прокачиваться в JS
+
+	label(class="future__label")
+		input(class="future__input" type="radio" name="future" value="Менеджерство")
+		span(class="future__checked-img")
+	div(class="future__item-text") Менеджерство
+
+	label(class="future__label")
+		input(class="future__input" type="radio" name="future" value="Другое")
+		span(class="future__checked-img")
+	div(class="future__item-text") Другое

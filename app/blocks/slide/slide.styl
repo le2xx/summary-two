@@ -1,0 +1,50 @@
+.slide
+	margin-top 67px
+	display block
+
+	&__title
+		font-size 24px
+		font-weight 700
+		line-height 50px
+		color #2f1b15
+
+	&__input
+		position relative
+		left -4px
+		display block
+		width 780px
+		height 60px
+		cursor pointer
+		-webkit-appearance none
+
+		background url('../../assets/images/scale.png') no-repeat left
+
+		&::-webkit-slider-thumb
+			position relative
+			top -15px
+			width 17px
+			height 14px
+			background url('../../assets/images/thumb.png') no-repeat
+			-webkit-appearance none
+
+	&__scale-text
+		display inline-block
+		font-size 13px
+		font-weight 700
+		line-height 19px
+		vertical-align top
+		color #2f1b15
+
+		&_one
+			width 154px
+
+		&_two
+			width 218px
+
+		&_tree
+			width 170px
+
+		&_four
+			width 226px
+			text-align right
+

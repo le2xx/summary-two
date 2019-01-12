@@ -59,4 +59,5 @@ window.onload = () => {
 	};
 
 	slide.addEventListener('mouseup', autoParking);
+	slide.addEventListener('touchend', autoParking);
 };

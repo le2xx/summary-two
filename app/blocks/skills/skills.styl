@@ -3,18 +3,14 @@
 	margin-right 115px
 	margin-left -1px
 	display block
+	user-select none
 
 	&__title
-		font-size 24px
-		font-weight 700
-		line-height 50px
+		title-font()
 
 	&__text
 		margin-top -3px
-		font-size 15px
-		font-weight 400
-		line-height 23px
-		color #3d3d3d
+		text-font()
 
 	&__items
 		margin-top 18px
@@ -27,14 +23,20 @@
 		margin-left 1px
 
 	&__item-text
-		margin-left 5px
+		margin-left 8px
 		display inline-block
 		width 200px
 		font-size 21px
 		font-weight 700
 		line-height 25px
 		vertical-align top
-		color #000000
+		user-select none
+		color $black-color
+
+		&_url
+			display inline
+			color $url-color
+			text-decoration underline
 
 	&__label
 		position relative
@@ -61,4 +63,3 @@
 		width 21px
 		height 27px
 		background url('../../assets/images/checked.png')
-

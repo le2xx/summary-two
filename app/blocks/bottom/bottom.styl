@@ -1,18 +1,16 @@
 .bottom
+	margin 76px 0 0 -1px
 	display block
-	margin-top 76px
-	margin-left -1px
-	margin-bottom 60px
 
 	&__title
 		margin-right 21px
 		display inline-block
+		title-font()
 		font-size 22px
-		font-weight 700
-		line-height 50px
-		color #2f1b15
 
 	&__date
+		position relative
+		top -14px
 		padding 0 19px 7px 9px
 		width 700px
 		height 9px
@@ -23,5 +21,3 @@
 		color #231f20
 		background url('../../assets/images/string.png') center no-repeat
 		background-position-y bottom
-		position relative
-		top -14px

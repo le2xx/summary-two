@@ -4,30 +4,60 @@
 	display block
 
 	&__title
-		font-size 24px
-		font-weight 700
-		line-height 50px
-		color #2f1b15
+		title-font()
 
-	&__input
+	input-range-track()
 		position relative
 		top 3px
 		left -5px
-		display block
 		width 780px
 		height 60px
 		cursor pointer
-		-webkit-appearance none
-
 		background url('../../assets/images/scale.png') no-repeat left
 
+	input-range-thumb()
+		width 17px
+		height 14px
+		background url('../../assets/images/thumb.png') no-repeat
+
+	&__input
+		input-range-track()
+
+	&__input[type='range']
+		-webkit-appearance none
+
 		&::-webkit-slider-thumb
+			input-range-thumb()
 			position relative
 			top -14px
-			width 17px
-			height 14px
-			background url('../../assets/images/thumb.png') no-repeat
 			-webkit-appearance none
+
+		&::-moz-range-track
+			input-range-track()
+			display block
+
+		&::-moz-range-thumb
+			input-range-thumb()
+			transform translateY(-15px)
+			border none
+
+		&::-moz-focus-outer, &::-moz-focus-inner
+			padding 0
+			border none
+
+		&::-ms-fill-lower, &::-ms-fill-upper
+			background transparent
+
+		&::-ms-track
+			input-range-track()
+			color transparent
+			border-color transparent
+
+		&::-ms-thumb
+			input-range-thumb()
+			margin-bottom 30px
+			color transparent
+			border-color transparent
 
 	&__scale-text
 		display inline-block
@@ -35,7 +65,7 @@
 		font-weight 700
 		line-height 19px
 		vertical-align top
-		color #2f1b15
+		color $title-color
 
 		&_one
 			width 144px

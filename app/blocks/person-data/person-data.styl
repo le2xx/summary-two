@@ -13,14 +13,16 @@
 		flex none
 
 	&__input
+		height 40px
 		input-font()
 		flex 1
-		padding-left 15px
-		padding-bottom 17px
-		height 38px
+		padding 0 0 15px 15px
 		background url('../../assets/images/string.png') center no-repeat
 		background-position-y bottom
 		border none
+
+		&::-ms-clear
+			display none
 
 	&__input[type='number']
 		-moz-appearance textfield
@@ -28,4 +30,3 @@
 		&::-webkit-inner-spin-button, &::-webkit-outer-spin-button
 			-webkit-appearance none
 			margin 0
-

@@ -2,10 +2,18 @@ mixin content()
 	+b.content&attributes(attributes)
 		block
 div(class="content")
-	include ../header/header
-	include ../person-data/person-data
-	include ../skills/skills
-	include ../slide/slide
-	include ../about-me/about-me
-	include ../future/future
-	include  ../bottom/bottom
+	header
+		include ../header/header
+	main
+		section
+			include ../person-data/person-data
+		section
+			include ../skills/skills
+		section
+			include ../slide/slide
+		section
+			include ../about-me/about-me
+		section
+			include ../future/future
+	bottom
+		include  ../bottom/bottom

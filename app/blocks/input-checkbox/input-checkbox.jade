@@ -1,0 +1,12 @@
+mixin input-checkbox()
+	+b.input-checkbox&attributes(attributes)
+		block
+mixin inputCheckbox(text, nameInput, isChecked, link)
+	div(class="input-checkbox__item")
+		label(class="input-checkbox__label")
+			input(class="input-checkbox__input" type="checkbox" name=nameInput value=text checked=isChecked)
+			span(class="input-checkbox__checked-img")
+		span(class="input-checkbox__item-text")=text
+			if (link)
+				a(href=link.url class="input-checkbox__item-text input-checkbox__item-text_url")=link.text
+

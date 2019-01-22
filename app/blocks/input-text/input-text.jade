@@ -1,0 +1,7 @@
+mixin input-text()
+	+b.input-text&attributes(attributes)
+		block
+mixin input-text(typeInput, labelText, idInput, value)
+	div(class="input-text__item")
+		label(class="input-text__label" for=idInput)=labelText
+		input(class="input-text__input" id=idInput type=typeInput value=value)

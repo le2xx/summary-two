@@ -1,23 +1,10 @@
 mixin person-data()
 	+b.person-data&attributes(attributes)
 		block
+include ../input-text/input-text
 div(class="person-data")
-	div(class="person-data__item")
-		label(class="person-data__label" for="fullName") Полное ФИО
-		input(class="person-data__input" id="fullName" type="text" value="Лещенко Алексей Мурадович")
-
-	div(class="person-data__item")
-		label(class="person-data__label" for="year") Год рождения
-		input(class="person-data__input" id="year" type="number" value="1984" maxlength="4")
-
-	div(class="person-data__item")
-		label(class="person-data__label" for="address") Место жительства
-		input(class="person-data__input" id="address" type="text" value="г. Волгодонск, Россия")
-
-	div(class="person-data__item")
-		label(class="person-data__label" for="skype") Скайп
-		input(class="person-data__input" id="skype" type="text" value="freemanlexx")
-
-	div(class="person-data__item")
-		label(class="person-data__label" for="email") Почта
-		input(class="person-data__input" id="email" type="text" value="le2x@rambler.ru")
+	+input-text('text', 'Полное ФИО', 'fullName', 'Лещенко Алексей Мурадович')
+	+input-text('number', 'Год рождения', 'year', '1984')
+	+input-text('text', 'Место жительства', 'address', 'г. Волгодонск, Россия')
+	+input-text('text', 'Скайп', 'skype', 'freemanlexx')
+	+input-text('text', 'Почта', 'email', 'le2x@rambler.ru')

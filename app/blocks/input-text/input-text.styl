@@ -1,0 +1,32 @@
+.input-text
+	display block
+
+	&__item
+		margin 13px 117px 0 0
+		display flex
+
+	&__label
+		title-font()
+		margin-right 16px
+		font-size 22px
+		flex none
+
+	&__input
+		height 40px
+		input-font()
+		flex 1
+		padding 0 0 15px 15px
+		background url('../../assets/images/string.png') center no-repeat
+		background-position-y bottom
+		border none
+
+		&::-ms-clear
+			display none
+
+	&__input[type='number']
+		-moz-appearance textfield
+
+		&::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+			-webkit-appearance none
+			margin 0
+
